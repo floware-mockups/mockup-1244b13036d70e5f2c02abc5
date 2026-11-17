@@ -1,0 +1,266 @@
+{
+  "title": "Gestione delle prenotazioni delle sale",
+  "description": "Prototipo navigabile per consultare la settimana, verificare la disponibilità delle sale e registrare prenotazioni inventate.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "calendario-settimanale",
+      "title": "Calendario settimanale",
+      "description": "Riepilogo delle prenotazioni e delle sale disponibili nella settimana selezionata.",
+      "metrics": [
+        {
+          "label": "Prenotazioni della settimana",
+          "value": "18"
+        },
+        {
+          "label": "Sale disponibili oggi",
+          "value": "3"
+        },
+        {
+          "label": "Ore prenotate",
+          "value": "42"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Attività",
+        "Organizzazione",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì",
+          "09:00–10:00",
+          "Pianificazione spazi",
+          "Radura Civica",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Lunedì",
+          "10:30–12:00",
+          "Coordinamento servizi",
+          "Nube Chiara",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Martedì",
+          "09:30–11:00",
+          "Revisione procedure",
+          "Quercia Blu",
+          "In attesa"
+        ],
+        [
+          "Lumo",
+          "Martedì",
+          "14:00–15:00",
+          "Incontro operativo",
+          "Radura Civica",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Mercoledì",
+          "09:00–10:30",
+          "Laboratorio interno",
+          "Sentiero Verde",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Giovedì",
+          "11:00–12:00",
+          "Verifica attività",
+          "Nube Chiara",
+          "Annullata"
+        ],
+        [
+          "Lumo",
+          "Venerdì",
+          "13:30–15:00",
+          "Riunione periodica",
+          "Quercia Blu",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prenotazioni",
+      "title": "Prenotazioni",
+      "description": "Elenco filtrabile delle richieste, con dati essenziali per individuare sala, fascia oraria e stato.",
+      "metrics": [
+        {
+          "label": "Richieste in attesa",
+          "value": "4"
+        },
+        {
+          "label": "Confermate",
+          "value": "14"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Attività",
+        "Organizzazione",
+        "Referente interno",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì",
+          "09:00–10:00",
+          "Pianificazione spazi",
+          "Radura Civica",
+          "Referente Lumo",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Lunedì",
+          "10:30–12:00",
+          "Coordinamento servizi",
+          "Nube Chiara",
+          "Referente Vela",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Martedì",
+          "09:30–11:00",
+          "Revisione procedure",
+          "Quercia Blu",
+          "Referente Nubi",
+          "5",
+          "In attesa"
+        ],
+        [
+          "Lumo",
+          "Martedì",
+          "14:00–15:00",
+          "Incontro operativo",
+          "Radura Civica",
+          "Referente Lumo",
+          "4",
+          "Confermata"
+        ],
+        [
+          "Vela",
+          "Mercoledì",
+          "09:00–10:30",
+          "Laboratorio interno",
+          "Sentiero Verde",
+          "Referente Vela",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Giovedì",
+          "11:00–12:00",
+          "Verifica attività",
+          "Nube Chiara",
+          "Referente Nubi",
+          "3",
+          "Annullata"
+        ],
+        [
+          "Lumo",
+          "Venerdì",
+          "13:30–15:00",
+          "Riunione periodica",
+          "Quercia Blu",
+          "Referente Lumo",
+          "7",
+          "Confermata"
+        ]
+      ],
+      "form": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Attività",
+        "Organizzazione",
+        "Referente interno",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "sale",
+      "title": "Sale disponibili",
+      "description": "Consultazione filtrabile delle sale e delle dotazioni per individuare uno spazio adatto.",
+      "metrics": [
+        {
+          "label": "Sale attive",
+          "value": "5"
+        },
+        {
+          "label": "Posti complessivi",
+          "value": "54"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Capienza",
+        "Dotazioni",
+        "Piano",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "12",
+          "Schermo, lavagna",
+          "1",
+          "Disponibile"
+        ],
+        [
+          "Vela",
+          "16",
+          "Schermo, videoproiezione",
+          "2",
+          "Disponibile"
+        ],
+        [
+          "Nubi",
+          "8",
+          "Lavagna",
+          "1",
+          "Disponibile"
+        ],
+        [
+          "Brina",
+          "10",
+          "Schermo, lavagna",
+          "3",
+          "Disponibile"
+        ],
+        [
+          "Rugiada",
+          "8",
+          "Videoproiezione",
+          "2",
+          "Manutenzione"
+        ]
+      ],
+      "form": [
+        "Sala",
+        "Capienza",
+        "Dotazioni",
+        "Piano",
+        "Stato"
+      ]
+    }
+  ]
+}
